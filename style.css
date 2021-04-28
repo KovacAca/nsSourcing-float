@@ -37,6 +37,14 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--headings);
   font-weight: 300;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
 /***************
 header
 ***************/
@@ -50,5 +58,39 @@ header h1 {
 }
 header p {
   opacity: 0.8;
+}
+/***************
+main
+***************/
+main {
+  max-width: 1140px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+}
+/***************
+nav
+***************/
+nav {
+  text-align: center;
+  background: var(--lightgray);
+  padding: 25px 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  background: var(--white);
+  margin: 0 20px;
+  padding: 10px 20px;
+  color: var(--headings);
+  font-weight: 300;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  background: var(--headings);
+  color: var(--white);
 }
 
