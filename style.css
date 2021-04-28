@@ -3,8 +3,8 @@
   --lightgray: #f7f7f7;
   --white: #fff;
   --black: #000;
-  --primary: #e07985;  /* rgb(224, 121, 133) */
-  --secondary: #615295;  /* rgb(97, 82, 149) */
+  --primary: #e07985;  /* rgba(224, 121, 133) */
+  --secondary: #615295;  /* rgba(97, 82, 149) */
   --tertiary: #9bb2e1;
   --blue: #8cc9f0;
   --violet: #c79cc8;
@@ -23,3 +23,32 @@ basic styles
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  background-image: linear-gradient(45deg,rgba(224, 121, 133, .97), rgba(97, 82, 149, .97)), url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  line-height: 1.6;
+  height: 100vh;
+  font-weight: 200;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--headings);
+  font-weight: 300;
+}
+/***************
+header
+***************/
+header {
+  text-align: center;
+  padding: 100px 0;
+}
+header h1 {
+  color: var(--white);
+  font-size: 5rem;
+}
+header p {
+  opacity: 0.8;
+}
+
