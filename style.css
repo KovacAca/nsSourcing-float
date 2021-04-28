@@ -44,7 +44,40 @@ a {
   text-decoration: none;
   transition: var(--transition);
 }
-
+.clearfix {
+  padding: 50px;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+h2 {
+  font-size: 3rem;
+}
+h2::after {
+  display: block;
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary), var(--primary), var(--blue));
+  margin: 15px auto 25px auto;
+}
+button {
+  padding: 15px 40px;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid var(--borders);
+  color: var(--text);
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+button:hover {
+  background: var(--lightgray);
+}
 /***************
 header
 ***************/
@@ -92,5 +125,29 @@ nav ul li a {
 nav ul li a:hover {
   background: var(--headings);
   color: var(--white);
+}
+/***************
+onama
+***************/
+#onama article:first-child {
+  width: 60%;
+  float: left;
+}
+#onama article:last-child {
+  width: 35%;
+  float: right;
+  padding: 15px;
+  border-radius: 50%;
+  border: 3px solid var(--lightgray);
+}
+#onama img {
+  width: 100%;
+  border-radius: 50%;
+}
+#onama h2::after {
+  margin: 15px 0 25px 0;
+}
+#onama p {
+  padding: 0 0 30px 0;
 }
 
