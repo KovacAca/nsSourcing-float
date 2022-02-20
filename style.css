@@ -94,6 +94,7 @@ header
 header {
   text-align: center;
   padding: 100px 0;
+  color: var(--white);
 }
 header h1 {
   color: var(--white);
@@ -303,4 +304,53 @@ footer button {
 footer button:hover {
   background: var(--blue);
   border: 1px solid var(--blue);
+}
+/***************
+responsive
+***************/
+@media(max-width: 767px){
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  nav ul li a {
+    background: transparent;
+    margin: 0px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  #onama article:first-child,
+  #onama article:last-child,
+  #usluge article,
+  #brojac div,
+  footer article:first-child,
+  footer article:last-child {
+    width: 100%;
+    text-align: center;
+  }
+  #onama article:last-child,
+  footer article:last-child {
+    margin-top: 30px;
+  }
+  h2::after {
+    width: 100%;
+}
+  main {
+    width: 90%;
+  }
+  .clearfix {
+    padding: 25px;
+  }
+  button {
+    padding: 10px 30px;
+    font-size: .8rem;
+  }
+  footer span {
+    margin-right: 20px;
+  }
 }
