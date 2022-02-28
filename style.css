@@ -149,7 +149,7 @@ onama
   float: right;
   padding: 15px;
   border-radius: 50%;
-  border: 3px solid var(--lightgray);
+  border: 2px solid var(--lightgray);
 }
 #onama img {
   width: 100%;
@@ -303,6 +303,7 @@ footer button {
 }
 footer button:hover {
   background: var(--blue);
+  color: var(--text);
   border: 1px solid var(--blue);
 }
 /***************
